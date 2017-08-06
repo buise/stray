@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>传感器详情页</title>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <link rel="stylesheet" href="../css/sensor-details.css">
+</head>
+<body>
+<header>
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>传感器详情页</div>
+    <a href="javascript:;"></a>
+</header>
+<div class="data">
+    <h3>实时数据</h3>
+    <h3>8888</h3>
+</div>
+<div class="data">
+    <h3>数据状态</h3>
+    <h3>断开</h3>
+</div>
+<div class="common">
+    <h3>传感器自定义名</h3>
+    <a href="">&#xe64c;</a>
+</div>
+<div class="common">
+    <h3>前置显示</h3>
+    <a href="">&#xe609;</a>
+</div>
+<div class="common">
+    <h3>数据趋势图</h3>
+    <a href="trend.html">&#xe93b;</a>
+</div>
+<div class="common">
+    <h3>历史数据表</h3>
+    <a href="history.html">&#xe65b;</a>
+</div>
+<div class="common last">
+    <h3>报警设置</h3>
+    <a href="alarm.html">&#xe650;</a>
+</div>
+<!--<div id="wrapper">-->
+    <!--<div id="scroller">-->
+
+    <!--</div>-->
+<!--</div>-->
+</body>
+</html>
+<script>
+//    var myScroll;
+//
+//    function loaded () {
+//        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+//    }
+    let back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+             window.history.go(-1);
+    })
+</script>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>传感器趋势图</title>
+    <link rel="stylesheet" href="../css/trend.css">
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/trend.js"></script>
+</head>
+<body>
+<div class="top">
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>传感器趋势图</div>
+    <a href="javascript:;" class="search">&#xe638;</a>
+</div>
+
+<!--点击出现的块-->
+<div class="click">
+    <div class="choice">
+        <p>起始日期</p>
+        <input type="date">
+    </div>
+    <div class="choice">
+        <p>结束日期</p>
+        <input type="date">
+    </div>
+    <div class="choice cho">
+        <ul>
+            <li>一小时</li>
+            <li>一天</li>
+            <li>七天</li>
+            <li>三十天</li>
+        </ul>
+    </div>
+    <div class="choice cho">
+        <div class="ok">确认</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+        window.history.go(-1);
+    })
+</script>

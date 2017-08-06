@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>传感器报警设置</title>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/alarm.css">
+</head>
+<body>
+<header>
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>传感器报警设置</div>
+    <a href="javascript:;"></a>
+</header>
+<div class="con">
+    <div class="box">
+        <div class="title">上限设置</div>
+        <div class="set">
+            <input type="text" class="set-up">
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">备注信息</div>
+        <div class="set">
+            <textarea name="" class=""></textarea>
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">提醒模式</div>
+        <div class="set">
+            <select name="" class="set-up">
+                <option value="">铃声提醒</option>
+                <option value="">推送提醒</option>
+                <option value="">震动提醒</option>
+            </select>
+        </div>
+    </div>
+    <div class="box bottom">
+        <div class="title">下限设置</div>
+        <div class="set">
+            <input type="text" class="set-up">
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">备注信息</div>
+        <div class="set">
+            <textarea name="" class=""></textarea>
+        </div>
+    </div>
+    <div class="box">
+        <div class="title">提醒模式</div>
+        <div class="set">
+            <select name="" class="set-up">
+                <option value="">铃声提醒</option>
+                <option value="">推送提醒</option>
+                <option value="">震动提醒</option>
+            </select>
+        </div>
+    </div>
+    <button>确认</button>
+</div>
+</body>
+</html>
+<script>
+    var back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+        window.history.go(-1);
+    })
+</script>

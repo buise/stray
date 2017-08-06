@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../icon/iconfont.eot');
+    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../icon/iconfont.woff') format('woff'),
+    url('../icon/iconfont.ttf') format('truetype'),
+    url('../icon/iconfont.svg#iconfont') format('svg');
+}
+body{
+    background:#F5F5F5;
+}
+
+
+.top{
+    width:100%;
+    height:0.44rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01rem solid #e4e4e4;
+    box-sizing: border-box;
+}
+.top a{
+    display: block;
+    width:0.4rem;
+    height:100%;
+    font-size: 0.2rem;
+    line-height: 0.44rem;
+    text-align: center;
+    color:#000;
+    font-family: "iconfont";
+}
+.top > div{
+    height:100%;
+    font-size: 0.2rem;
+    line-height: 0.44rem;
+}
+
+/*点击出现的块*/
+.click{
+    width:80%;
+    position: absolute;
+    right:0;
+    top:0.44rem;
+    box-shadow: -0.03rem 0.03rem 0.02rem #ddd;
+    overflow: hidden;
+    /*transition: width 0.5s linear;*/
+    display: none;
+}
+.choice{
+    width:100%;
+    height:0.4rem;
+    background: #fff;
+}
+.choice p{
+    font-size: 0.16rem;
+    line-height: 0.4rem;
+    float: left;
+    margin-left:0.1rem;
+}
+.choice input{
+    display: block;
+    float: right;
+    height:0.3rem;
+    width:1.9rem;
+    margin-top:0.05rem;
+    box-sizing:border-box;
+    margin-right:0.2rem;
+}
+.choice select{
+    display: block;
+    float: right;
+    height:0.3rem;
+    width:1.9rem;
+    margin-top:0.05rem;
+    box-sizing:border-box;
+    margin-right:0.2rem;
+}
+.cho{
+    padding:0.05rem 0.1rem;
+    box-sizing: border-box;
+}
+.choice ul{
+    width:100%;
+    height:100%;
+    border: 0.01rem solid #e4e4e4;
+    box-sizing: border-box;
+}
+.choice ul li{
+    width:25%;
+    height:100%;
+    float:left;
+    border-right: 0.01rem solid #e4e4e4;
+    font-size:0.14rem;
+    box-sizing: border-box;
+    line-height: 0.3rem;
+    text-align: center;
+}
+.choice ul li:last-child{
+    border: none;
+}
+.choice .ok{
+    width:20%;
+    height:0.3rem;
+    line-height: 0.3rem;
+    font-size:0.14rem;
+    margin:0 auto;
+    border:0.01rem solid #e4e4e4;
+    box-sizing: border-box;
+    text-align: center;
+}
