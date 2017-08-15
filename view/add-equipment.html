@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扫码页</title>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/add-equipment.css">
+</head>
+<body>
+<header>
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>添加设备</div>
+    <a href="javascript:;"></a>
+</header>
+<div class="scanning">
+
+</div>
+<div class="other">手动输入序列号</div>
+
+<div class="write">
+    <div class="box">
+        <input type="text" placeholder="请输入序列号" name="idcard">
+        <div class="choice">
+            <div class="yes">添加</div>
+            <div class="no">取消</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+        window.history.go(-1);
+    })
+    $('.other').click(function () {
+        $('.write').show();
+    })
+    $('.no').click(function () {
+        $('.write').hide();
+    })
+    $('.yes').click(function () {
+        $.ajax({
+            url:'http://106.14.1.61:9000/addDevice?user='+sessionStorage.user+'&token='+sessionStorage.token+'&dev=PIDS1200C1F31200',
+            contentType:"application/json",
+            cache:false,
+            type:'post',
+            error:function(){
+                console.log("设备不存在");
+            },
+            success:function (text) {
+                if(text.result=='success'){
+                    location.href="../index.html";
+                }
+            }
+        })
+    })
+</script>

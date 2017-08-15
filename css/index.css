@@ -20,23 +20,48 @@ body{
     background:#F5F5F5;
 }
 /*头部*/
-.top{
+header{
     width:100%;
     height:0.44rem;
-    background: dodgerblue;
+    background:#fff;
+}
+.code{
+    width:0.44rem;
+    height:100%;
     text-align: center;
     line-height: 0.44rem;
-    font-size:0.2rem;
-    color:#fff;
-    position:relative;
-}
-.xx{
+    font-size: 0.2rem;
     font-family: "iconfont";
-    font-size:0.2rem;
-    position:absolute;
-    left:0.3rem;
-    top:0;
+    float: left;
+    color:#000;
+}
+header h6{
+    font-size: 0.2rem;
     line-height: 0.44rem;
+}
+.danger{
+    width:0.44rem;
+    height:100%;
+    text-align: center;
+    line-height: 0.44rem;
+    font-size: 0.24rem;
+    font-family: "iconfont";
+    margin-right:0.04rem;
+    float: right;
+    color:red;
+}
+.nub{
+    width:0.12rem;
+    height:0.12rem;
+    font-size: 0.08rem;
+    background:red;
+    color:#fff;
+    position: absolute;
+    right:0.14rem;
+    top:0.18rem;
+    border-radius: 50%;
+    line-height: 0.12rem;
+    text-align: center;
 }
 
 .search{
@@ -47,36 +72,51 @@ body{
     border:none;
     border-radius: 0.05rem;
     text-indent: 0.1rem;
+    position:relative;
+}
+.sea-sou{
+    display: block;
+    width:0.3rem;
+    height:0.3rem;
+    position: absolute;
+    right:0.08rem;
+    top:0.51rem;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.18rem;
+    color:#000;
+    font-family: "iconfont";
 }
 /*内容部分*/
 .con{
     position:absolute;
     left:0;
     right:0;
-    top:0.44rem;
+    top:0.88rem;
     bottom:0.6rem;
 }
 .son{
     width:100%;
     overflow: hidden;
+    background: #fff;
 }
 .title{
     width:100%;
     height:0.6rem;
-    background: #fff;
     padding:0 0.15rem;
     box-sizing: border-box;
 }
 .tit1{
-    float: left;
+    /*float: left;*/
     height:0.3rem;
-    width:2rem;
     font-size: 0.14rem;
     line-height: 0.4rem;
     font-weight: 600;
+    display: block;
+    color:#000;
 }
 .tit4{
-    float: left;
+    /*float: left;*/
     height:0.3rem;
     font-size: 0.14rem;
     line-height: 0.22rem;
@@ -100,7 +140,7 @@ body{
     width:0.5rem;
     text-align: center;
     font-size: 0.24rem;
-    line-height: 0.6rem;
+    line-height: 0.65rem;
     color:#555;
     display: block;
 }
@@ -130,11 +170,11 @@ body{
     border-right:0;
     border-left:0;
 }
-.fa li:nth-child(1){
-    border-bottom:0;
+.fa li:nth-child(3){
+    border-top:0;
 }
-.fa li:nth-child(2){
-    border-bottom:0;
+.fa li:nth-child(4){
+    border-top:0;
 }
 .fa li .name{
     width:100%;
@@ -158,11 +198,11 @@ body{
     font-family: "iconfont";
     width:0.4rem;
     height:0.4rem;
-    font-size: 0.2rem;
+    font-size: 0.24rem;
     text-align: center;
-    line-height: 0.4rem;
+    line-height: 0.44rem;
     float:right;
-    color:#61BBF1;
+    color:#1FFA2E;
 }
 .fa h3{
     width:100%;
@@ -178,8 +218,51 @@ body{
 .kong{
     width:100%;
     height:0.2rem;
+    background:#F5F5F5;
 }
 
+/*管理员权限*/
+.power{
+    width:100%;
+    overflow: hidden;
+    display: none;
+}
+.power .pow-top{
+    width:50%;
+    height:0.4rem;
+    border: 0.01rem solid #e4e4e4;
+    box-sizing: border-box;
+    float:left;
+}
+.power .pow-top p{
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.38rem;
+}
+.power .pow-top p span{
+    font-size: 0.22rem;
+    font-family: "iconfont", "微软雅黑";
+}
+.power .pow-cha{
+    width:100%;
+    height:0.4rem;
+    border: 0.01rem solid #e4e4e4;
+    box-sizing: border-box;
+    float:left;
+}
+.power .pow-cha p{
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.38rem;
+}
+.power .pow-cha p span{
+    font-size: 0.22rem;
+    font-family: "iconfont";
+}
+.power .pow-cha p input{
+    font-size: 0.12rem;
+    width:2rem;
+}
 
 #wrapper {
     position: absolute;
@@ -196,7 +279,7 @@ body{
     background: #fff;
 }
 .con-bottom a{
-    width:50%;
+    width:100%;
     height:100%;
     box-sizing: border-box;
     font-size: 0.16rem;
@@ -231,8 +314,25 @@ body{
     -o-text-size-adjust: none;
     text-size-adjust: none;
 }
-
 /*点击弹出框*/
+.click{
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    top:0.44rem;
+    z-index: 150;
+    display: none;
+    border-top: 0.01rem solid #888;
+    box-shadow:0 0.05rem 0.05rem #888888;
+    background: #fff;
+}
+.clicked{
+    background: #eee;
+}
+.click .img1{
+    color:red;
+}
 /*底部*/
 .bottom{
     width:100%;

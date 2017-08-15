@@ -9,13 +9,14 @@
     <script src="../js/zepto.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/iscroll.js"></script>
+    <script src="../js/sensor-details.js"></script>
     <link rel="stylesheet" href="../css/sensor-details.css">
 </head>
 <body>
 <header>
     <a href="javascript:;" class="go-back">&#xe622;</a>
     <div>传感器详情页</div>
-    <a href="javascript:;"></a>
+    <a href="problem.html">&#xe68e;</a>
 </header>
 <div class="data">
     <h3>实时数据</h3>
@@ -23,27 +24,27 @@
 </div>
 <div class="data">
     <h3>数据状态</h3>
-    <h3>断开</h3>
+    <h3 class="is">断开 &#xe618;</h3>
+    <h3 class="isnot" style="display: none;color:limegreen">&#xe657; 连接</h3>
 </div>
 <div class="common">
-    <h3>传感器自定义名</h3>
-    <a href="">&#xe64c;</a>
+    <a class="new-name" href="">&#xe64c;</a>
+    <h3>
+        <input type="text" placeholder="传感器自定义名">
+    </h3>
 </div>
 <div class="common">
     <h3>前置显示</h3>
-    <a href="">&#xe609;</a>
+    <a href="javascript:;" class="to-top">&#xe603;</a>
+    <a href="javascript:;" class="no-to-top" style="display: none;color:limegreen">&#xe67d;</a>
 </div>
 <div class="common">
     <h3>数据趋势图</h3>
     <a href="trend.html">&#xe93b;</a>
 </div>
-<div class="common">
-    <h3>历史数据表</h3>
-    <a href="history.html">&#xe65b;</a>
-</div>
 <div class="common last">
-    <h3>报警设置</h3>
-    <a href="alarm.html">&#xe650;</a>
+    <h3>报警信息</h3>
+    <a href="alarm.html">&#xe64b;</a>
 </div>
 <!--<div id="wrapper">-->
     <!--<div id="scroller">-->
@@ -53,12 +54,7 @@
 </body>
 </html>
 <script>
-//    var myScroll;
-//
-//    function loaded () {
-//        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
-//    }
-    let back=document.querySelector('.go-back');
+    var back=document.querySelector('.go-back');
     back.addEventListener('touchstart',function () {
              window.history.go(-1);
     })

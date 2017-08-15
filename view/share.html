@@ -15,7 +15,7 @@
 <header>
     <a href="javascript:;" class="go-back">&#xe622;</a>
     <div>设备分享页</div>
-    <a href="javascript:;"></a>
+    <a href="share-list.html">&#xe925;</a>
 </header>
 <div class="con">
             <div class="title">
@@ -24,7 +24,7 @@
             </div>
             <div class="search-box">
                 <input type="text" class="search" placeholder="请输入用户信息">
-                <div class="icon-search">&#xe638;</div>
+                <a href="addShare.html" class="icon-search">&#xe638;</a>
             </div>
     <div id="wrapper">
         <div id="scroller">
@@ -143,7 +143,7 @@
     var myScroll;
 
     function loaded () {
-        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true, click:true});
     }
     let back=document.querySelector('.go-back');
     back.addEventListener('touchstart',function () {

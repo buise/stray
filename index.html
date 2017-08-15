@@ -8,16 +8,21 @@
     <title>监控</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/touch.min.js"></script>
     <script src="js/iscroll.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body onload="loaded()">
 <!--头部-->
-<!--<div class="top">-->
-    <!--我的设备-->
-    <!--<div class="xx">&#xe639;</div>-->
-<!--</div>-->
+<header>
+    <a href="view/alarm.html" class="danger">&#xe6a7;</a>
+    <a href="view/add-equipment.html" class="code">&#xe602;</a>
+    <h6>华屹物联</h6>
+    <h5 class="nub" onclick="location.href='view/alarm.html'">1</h5>
+</header>
 <input type="text" class="search" placeholder="输入设备名字">
+<a href="javascript:;" class="sea-sou">&#xe638;</a>
 <!--内容部分-->
 <div class="con">
     <div id="wrapper">
@@ -25,177 +30,198 @@
             <div class="son">
                 <div class="title">
                     <a href="view/Monitor-details.html" class="tit2">&#xe604;</a>
-                    <a href="javascript:;" class="tit3">&#xe63b;</a>
-                    <div class="tit1">建筑工地RPU</div>
-                    <div class="tit4">设备地址</div>
+                    <a href="javascript:;" class="tit3">&#xe75a;</a>
+                    <a href="view/equipment-details.html" class="tit1">1建筑工地RPU</a>
+                    <div class="tit4">备注信息</div>
                 </div>
                 <ul class="fa">
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                 </ul>
+                <div class="power">
+                    <div class="pow-cha">
+                        <p>禅让:
+                            <input type="text" placeholder="请输入继位者昵称或是账号">
+                            <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为一级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为二级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                </div>
                 <div class="kong"></div>
             </div>
             <div class="son">
                 <div class="title">
                     <a href="view/Monitor-details.html" class="tit2">&#xe604;</a>
-                    <a href="javascript:;" class="tit3">&#xe63b;</a>
-                    <div class="tit1">建筑工地RPU</div>
-                    <div class="tit4">设备地址</div>
+                    <a href="javascript:;" class="tit3">&#xe75a;</a>
+                    <a href="view/equipment-details.html" class="tit1">2建筑工地RPU</a>
+                    <div class="tit4">备注信息</div>
                 </div>
                 <ul class="fa">
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                 </ul>
+                <div class="power">
+                    <div class="pow-cha">
+                        <p>禅让:
+                            <input type="text" placeholder="请输入继位者昵称或是账号">
+                            <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为一级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为二级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                </div>
                 <div class="kong"></div>
             </div>
             <div class="son">
                 <div class="title">
                     <a href="view/Monitor-details.html" class="tit2">&#xe604;</a>
-                    <a href="javascript:;" class="tit3">&#xe63b;</a>
-                    <div class="tit1">建筑工地RPU</div>
-                    <div class="tit4">设备地址</div>
+                    <a href="javascript:;" class="tit3">&#xe75a;</a>
+                    <a href="view/equipment-details.html" class="tit1">3建筑工地RPU</a>
+                    <div class="tit4">备注信息</div>
                 </div>
                 <ul class="fa">
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                     <li>
-                        <a href="view/equipment-details.html">
-                            <!--<div class="name">-->
-                                <!--工地温湿度 <span>&#xe601;</span>-->
-                            <!--</div>-->
-                            <div class="img1">&#xe601;</div>
+                        <a href="view/sensor-details.html">
+                            <div class="img1">&#xe702;</div>
                             <div class="img">&#xe663;</div>
                             <h3>湿度:&nbsp;&nbsp;</h3>
                             <h3>86.0%RH</h3>
                         </a>
                     </li>
                 </ul>
+                <div class="power">
+                    <div class="pow-cha">
+                        <p>禅让:
+                            <input type="text" placeholder="请输入继位者昵称或是账号">
+                            <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为一级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                    <div class="pow-top">
+                        <p>申请为二级管理员 <span>&#xe75a;</span></p>
+                    </div>
+                </div>
                 <div class="kong"></div>
             </div>
             <div class="con-bottom">
-                <a href="" class="con-bottom-left">
+                <a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller div:nth-child(1)'))" class="con-bottom-left">
                     回到顶部
-                </a>
-                <a href="javascript:;" class="con-bottom-right">
-                    添加显示设备(88)
                 </a>
             </div>
         </div>
     </div>
 </div>
 <!--点击弹出框-->
+<!--<div class="click">-->
+    <!--<div class="title">-->
+        <!--<a href="view/Monitor-details.html" class="tit2">&#xe604;</a>-->
+        <!--<a href="javascript:;" class="tit2"></a>-->
+        <!--<a href="view/equipment-details.html" class="tit1">1建筑工地RPU</a>-->
+        <!--<div class="tit4">设备地址</div>-->
+    <!--</div>-->
+    <!--<ul class="fa">-->
+        <!--<li>-->
+            <!--<a href="view/sensor-details.html">-->
+                <!--<div class="img1">&#xe6a7;</div>-->
+                <!--<div class="img">&#xe663;</div>-->
+                <!--<h3>湿度:&nbsp;&nbsp;</h3>-->
+                <!--<h3>86.0%RH</h3>-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
 <!--底部-->
 <div class="bottom">
     <a href="javascript:;" class="nav">
@@ -207,10 +233,10 @@
         <h2>监控区</h2>
     </a>
     <a href="javascript:;" class="nav nav2">
-        <h1>&#xe61f;</h1>
+        <h1>&#xe72b;</h1>
         <h2>商城</h2>
     </a>
-    <a href="javascript:;" class="nav nav2">
+    <a href="view/myindex.html" class="nav nav2">
         <h1>&#xe61f;</h1>
         <h2>我的</h2>
     </a>
@@ -221,6 +247,12 @@
     var myScroll;
 
     function loaded () {
-        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true });
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click:true
+        });
     }
+
+    $(document).on("click","")
 </script>

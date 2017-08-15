@@ -78,6 +78,17 @@ header div{
     font-size:0.24rem;
     color:#000;
 }
+.common .new-name{
+    float: left;
+    margin-right:0.1rem;
+}
+.common h3 input{
+    display: block;
+    height:0.4rem;
+    margin-top:0.1rem;
+    background: #f5f5f5;
+    border: none;
+}
 .last{
     border-bottom:0.01rem solid #e4e4e4;
 }

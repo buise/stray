@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的</title>
+    <link rel="stylesheet" href="../css/myindex.css">
+    <script src="../js/main.js"></script>
+    <script src="../js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<!--内容部分-->
+<div id="wrapper">
+    <div id="scroller">
+        <div class="con">
+            <div class="personal">
+                <a href="personal.html">编辑资料</a>
+                <img src="../images/tx.jpg" alt="">
+                <h1>一级标题</h1>
+                <h2>三级标题</h2>
+            </div>
+            <div class="equipment">
+                <div class="eq">
+                    <h1>8888</h1>
+                    <h1>一级权限设备</h1>
+                </div>
+                <div class="eq">
+                    <h1>8888</h1>
+                    <h1>二级权限设备</h1>
+                </div>
+                <div class="eq">
+                    <h1>8888</h1>
+                    <h1>待维护设备</h1>
+                </div>
+            </div>
+            <div class="vip">
+                <div class="vip-top">
+                    <div class="more">更多特权</div>
+                    <div class="icon">&#xe70b;</div>
+                    <div class="title">我的特权</div>
+                </div>
+                <ul class="every">
+                    <li>
+                        <div class="img">&#xe608;</div>
+                        <div class="name">钻石会员</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                    <li>
+                        <div class="img">&#xe693;</div>
+                        <div class="name">普通会员</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                    <li>
+                        <div class="img">&#xe605;</div>
+                        <div class="name">容量扩展</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                    <li>
+                        <div class="img">&#xe608;</div>
+                        <div class="name">钻石会员</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                    <li>
+                        <div class="img">&#xe693;</div>
+                        <div class="name">普通会员</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                    <li>
+                        <div class="img">&#xe605;</div>
+                        <div class="name">容量扩展</div>
+                        <div class="name">服务到期：2019/9/9</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list">
+                <div class="list-data">8888</div>
+                <div class="list-data">8888</div>
+                <div class="list-name">我的收藏</div>
+                <div class="list-icon">&#xe60a;</div>
+            </div>
+            <div class="list">
+                <div class="list-data">8888</div>
+                <div class="list-data">8888</div>
+                <div class="list-name">待看推荐</div>
+                <div class="list-icon">&#xe607;</div>
+            </div>
+            <div class="list">
+                <div class="list-data">8888</div>
+                <div class="list-data">8888</div>
+                <div class="list-name">未看方案</div>
+                <div class="list-icon">&#xe66b;</div>
+            </div>
+            <div class="list">
+                <div class="list-data"></div>
+                <div class="list-data"></div>
+                <div class="list-name">客服</div>
+                <div class="list-icon">&#xe68e;</div>
+            </div>
+            <div class="list">
+                <div class="list-data"></div>
+                <div class="list-data"></div>
+                <div class="list-name">版本</div>
+                <div class="list-icon">&#xe9bf;</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <a href="javascript:;" class="nav">
+        <h1>&#xe600;</h1>
+        <h2>演示区</h2>
+    </a>
+    <a href="../index.html" class="nav nav1">
+        <h1>&#xe61c;</h1>
+        <h2>监控区</h2>
+    </a>
+    <a href="javascript:;" class="nav nav2">
+        <h1>&#xe72b;</h1>
+        <h2>商城</h2>
+    </a>
+    <a href="javascript:;" class="nav nav2" id="uni">
+        <h1>&#xe61f;</h1>
+        <h2>我的</h2>
+    </a>
+</div>
+</body>
+</html>
+<script>
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { scrollX: true, freeScroll: true, click:true});
+    }
+</script>

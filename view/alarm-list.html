@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设备一数据中心</title>
+    <script src="../js/main.js"></script>
+    <script src="../js/zepto.min.js"></script>
+    <link rel="stylesheet" href="../css/alarm-list.css">
+    <!--<script src="../js/alarm-list.js"></script>-->
+    <script src="../js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<header>
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>设备一数据中心</div>
+    <a href="javascript:;"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <table cellspacing="0">
+            <tr>
+                <th>设备名</th>
+                <th>传感器名</th>
+                <th>报警时间</th>
+                <th>解除时间</th>
+                <th>报警值</th>
+                <th>报警详情</th>
+            </tr>
+            <tr onclick="location.href='alarm-show.html'">
+                <td>设备名一</td>
+                <td>IO开关</td>
+                <td>2017-8-10 14:42</td>
+                <td style="color:red;font-size: 0.2rem">&#xe6a7;</td>
+                <td>200</td>
+                <td>紧急报警</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="three-box">
+    <h1>上一设备</h1>
+    <h1>下一设备</h1>
+</div>
+</body>
+</html>
+<script>
+    var back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+        window.history.go(-1);
+    })
+
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click:true
+        });
+    }
+
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+</script>

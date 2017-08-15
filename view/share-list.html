@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>权限申请列表</title>
+    <script src="../js/main.js"></script>
+    <script src="../js/zepto.min.js"></script>
+    <link rel="stylesheet" href="../css/share-list.css">
+    <!--<script src="../js/alarm-list.js"></script>-->
+    <script src="../js/iscroll.js"></script>
+</head>
+<body onload="loaded()">
+<header>
+    <a href="javascript:;" class="go-back">&#xe622;</a>
+    <div>权限申请列表</div>
+    <a href="javascript:;"></a>
+</header>
+<div id="wrapper">
+    <div id="scroller">
+        <table cellspacing="0">
+            <tr>
+                <th>申请设备</th>
+                <th>申请人</th>
+                <th>申请类型</th>
+                <th>申请日期</th>
+                <th>处理结果</th>
+            </tr>
+            <tr>
+                <td>设备一</td>
+                <td>张三</td>
+                <td>成为三级用户</td>
+                <td>2017-8-10 14:42</td>
+                <td>
+                    <div class="agree">
+                        <div>通过</div>
+                        <div>忽略</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>设备一</td>
+                <td>张三</td>
+                <td>成为三级用户</td>
+                <td>2017-8-10 14:42</td>
+                <td>
+                    <div class="agree">
+                        <div>通过</div>
+                        <div>忽略</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>设备一</td>
+                <td>张三</td>
+                <td>成为三级用户</td>
+                <td>2017-8-10 14:42</td>
+                <td>
+                    <div class="agree">
+                        <div>通过</div>
+                        <div>忽略</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var back=document.querySelector('.go-back');
+    back.addEventListener('touchstart',function () {
+        window.history.go(-1);
+    })
+
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', {
+            scrollX: true,
+            freeScroll: true,
+            click:true
+        });
+    }
+
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+</script>
